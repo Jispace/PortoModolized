@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  /* Default theme color: Beige Lin Naturel (Hue: 36°, Saturation: 36%, Lightness: 68%) */
+  --theme-h: 36;
+  --theme-s: 36%;
+  --theme-l: 68%;
+  --primary-hsl: hsl(var(--theme-h), var(--theme-s), var(--theme-l));
+  --primary-hsl-hover: hsl(var(--theme-h), var(--theme-s), 62%);
+  --primary-hsl-contrast: hsl(var(--theme-h), 45%, 38%);
+  --primary-btn-text: hsl(var(--theme-h), 28%, 14%);
+
+  /* Harmonized dark palette (always dark, but gently tinted to match the active hue) */
+  --color-dark: hsl(var(--theme-h), 24%, 13%);
+  --color-dark-deep: hsl(var(--theme-h), 28%, 9%);
+  --color-dark-surface: hsl(var(--theme-h), 20%, 18%);
+  --color-dark-border: hsl(var(--theme-h), 18%, 24%);
+
+  /* Harmonized text hierarchy */
+  --text-primary: hsl(var(--theme-h), 24%, 13%);
+  --text-secondary: hsl(var(--theme-h), 16%, 28%);
+  --text-muted: hsl(var(--theme-h), 12%, 42%);
+
+  /* Harmonized surfaces and borders */
+  --bg-page: hsl(var(--theme-h), 30%, 98%);
+  --bg-subtle: hsl(var(--theme-h), 24%, 95%);
+  --border-subtle: hsl(var(--theme-h), 20%, 89%);
+  --border-strong: hsl(var(--theme-h), 22%, 82%);
+
+  /* Unified font stacks */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Newsreader', 'Playfair Display', Georgia, serif;
+  --font-editorial: 'Newsreader', 'Playfair Display', Georgia, serif;
+}
+
+/* Default font & smooth overflow-safe scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  overflow-x: clip;
+}
+
+html, body, button, input, textarea, select {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-page, #FDFBF7);
+  color: var(--text-primary, #2D241E);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Editorial Serif & Punchline font styling */
+.font-serif {
+  font-family: 'Newsreader', 'Playfair Display', Georgia, serif !important;
+  letter-spacing: -0.015em;
+}
+
+.font-editorial,
+.catchphrase-font {
+  font-family: 'Newsreader', 'Playfair Display', Georgia, serif !important;
+  font-style: italic !important;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Dynamic color mapping for persistent harmony when tuning colors */
+.text-\[\#2D241E\], .text-\[\#2d241e\] {
+  color: var(--text-primary, #2D241E) !important;
+}
+
+.text-\[\#4A3B2F\], .text-\[\#4a3b2f\] {
+  color: var(--text-secondary, #4A3B2F) !important;
+}
+
+.text-\[\#635345\], .text-\[\#635345\] {
+  color: var(--text-muted, #635345) !important;
+}
+
+.bg-\[\#2D241E\], .bg-\[\#2d241e\] {
+  background-color: var(--color-dark, #2D241E) !important;
+}
+
+.bg-\[\#FDFBF7\], .bg-\[\#fdfbf7\] {
+  background-color: var(--bg-page, #FDFBF7) !important;
+}
+
+.bg-\[\#FAF7F2\], .bg-\[\#faf7f2\] {
+  background-color: var(--bg-subtle, #FAF7F2) !important;
+}
+
+.border-\[\#EAE3D8\], .border-\[\#eae3d8\], .border-\[\#E8DFC8\], .border-\[\#ECE5DB\] {
+  border-color: var(--border-subtle, #EAE3D8) !important;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-subtle, #F7F3EB);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong, #D8CCBD);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-hsl, #D3A376);
+}
+
+/* Hide scrollbar utility for clean responsive horizontal scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

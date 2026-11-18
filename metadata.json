@@ -1,0 +1,6 @@
+{
+  "name": "Candya R. — Portfolio HSL & Assistante Virtuelle",
+  "description": "Portfolio haut de gamme et interactif de Candya Randriamanarina : Assistante virtuelle & Support client écrit pour coachs et formateurs en ligne. Organisation administrative, cas concrets et moteur de nuances HSL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

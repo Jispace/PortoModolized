@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candya R. — Portfolio HSL &amp; Assistante Virtuelle</title>
+    <meta name="description" content="Portfolio haut de gamme et interactif de Candya Randriamanarina : Assistante virtuelle &amp; Support client écrit pour coachs et formateurs en ligne. Organisation administrative, cas concrets et moteur de nuances HSL." />
+    <meta name="keywords" content="assistante virtuelle pour coachs en ligne, assistante virtuelle formateurs, support client écrit bienveillant, gestion boîte mail inbox zero, organisation administrative coaching, suivi apprenants et élèves, gestion CRM HubSpot Notion, suivi paiements et facturation, délégation back-office coaching, Candya Randriamanarina" />
+    <meta name="author" content="Candya Randriamanarina" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#C9B08E" />
+
+    <!-- OpenGraph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Candya R. — Assistante Virtuelle" />
+    <meta property="og:title" content="Candya R. — Portfolio HSL &amp; Assistante Virtuelle" />
+    <meta property="og:description" content="Portfolio haut de gamme et interactif de Candya Randriamanarina : Assistante virtuelle &amp; Support client écrit pour coachs et formateurs en ligne. Organisation administrative, cas concrets et moteur de nuances HSL." />
+    <meta property="og:image" content="/og-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1376" />
+    <meta property="og:image:height" content="768" />
+    <meta property="og:image:alt" content="Espace de travail organisé de Candya Randriamanarina, assistante virtuelle pour coachs et formateurs en ligne" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Candya R. — Portfolio HSL &amp; Assistante Virtuelle" />
+    <meta name="twitter:description" content="Assistante virtuelle pour coachs et formateurs en ligne : Inbox Zero, gestion d'agenda, suivi apprenants, CRM HubSpot/Notion et support client écrit sous 24h." />
+    <meta name="twitter:image" content="/og-preview.jpg" />
+    <meta name="twitter:image:alt" content="Espace de travail organisé de Candya Randriamanarina, assistante virtuelle pour coachs et formateurs en ligne" />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Candya R. — Assistante Virtuelle pour Coachs & Formateurs",
+        "description": "Organisation administrative rigoureuse, gestion CRM, suivi des paiements et support client écrit pour coachs et formateurs en ligne.",
+        "image": "/og-preview.jpg",
+        "serviceType": [
+          "Assistance virtuelle pour coachs en ligne",
+          "Organisation administrative & Inbox Zero",
+          "Support client écrit & SAV",
+          "Gestion CRM HubSpot & Notion",
+          "Suivi des paiements & facturation"
+        ],
+        "provider": {
+          "@type": "Person",
+          "name": "Candya Randriamanarina",
+          "jobTitle": "Assistante virtuelle indépendante",
+          "email": "mailto:rancandya@gmail.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/candya-randriamanarina-5439a2285"
+          ]
+        }
+      }
+    </script>
+
+    <!-- Dynamic Canonical & OpenGraph URL Resolution -->
+    <script>
+      (function () {
+        var currentUrl = window.location.origin + window.location.pathname;
+        var canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        canonical.href = currentUrl;
+        document.head.appendChild(canonical);
+
+        var ogUrl = document.createElement("meta");
+        ogUrl.setAttribute("property", "og:url");
+        ogUrl.content = currentUrl;
+        document.head.appendChild(ogUrl);
+
+        var ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage) ogImage.content = window.location.origin + "/og-preview.jpg";
+        var twImage = document.querySelector('meta[name="twitter:image"]');
+        if (twImage) twImage.content = window.location.origin + "/og-preview.jpg";
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased selection:bg-[#E0A97E]/30 selection:text-[#2D241E]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
